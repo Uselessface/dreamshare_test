@@ -25,7 +25,9 @@
 }
 
 /*-------------------------  GLOBAL STYLES --------------------------*/
-
+body{
+    overflow-x: hidden;
+} 
 .wrapper{
     max-width: 940px;
     display: flex;
@@ -49,7 +51,7 @@
         margin: 0px auto;
         max-width: 940px;
     }
-        .promo_name{
+        .promo__name{
             margin-top: 47px;
         }
             .name{
@@ -58,7 +60,7 @@
                 color: #ffffff;
                 text-transform: uppercase ;
             }
-        .promo_user-form{
+        .promo__user-form{
             margin-top: 38px;
         }
             .user-form{
@@ -87,7 +89,7 @@
                 }
     .promo__container{
         max-width: 500px;
-        margin:155px auto 196px;
+        margin:155px auto 195px;
         text-align: center;
     }
         .main{
@@ -96,7 +98,7 @@
             text-transform: uppercase;
             line-height: 1.2;
         }
-        .promo_main{
+        .promo__main{
             margin-bottom: 41px;
         }
         .sub-main{
@@ -105,7 +107,7 @@
             color: #ffffff;
             line-height: 1.2;
         }
-        .promo_sub-main{
+        .promo__sub-main{
             margin-bottom: 36px;
         }     
         .find-partner__button{
