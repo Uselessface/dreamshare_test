@@ -46,6 +46,7 @@ body{
 .promo{
     align-self: center;
     min-width: 1440px;
+    height: 698px;
     font-family: 'Montserrat_B';
     background-color: #1a1915;
     background-image: url('../assets/img/promo-bg.png');
@@ -60,16 +61,17 @@ body{
         max-width: 940px;
     }
         .promo__header__name_margin{
-            margin-top: 47px;
+            margin: 45px 0px 0px 0px;
         }
             .name{
                 font-size: 20px;
-                letter-spacing: 1px;
+                letter-spacing: 0.5px;
                 color: #ffffff;
-                text-transform: uppercase ;
+                text-transform: uppercase;
+                font-family: 'Montserrat_B';
             }
         .promo__header__user-form_margin{
-            margin-top: 38px;
+            margin-top: 33px;
         }
             .user-form{
                 display: flex;
@@ -83,7 +85,7 @@ body{
                     cursor: pointer;
                 }
                 .user-form__item_log-in{
-                    margin-right: 19px;
+                    margin-right: 20px;
                 }
                 .user-form__item_sign-up{
                     display:flex;
@@ -97,7 +99,7 @@ body{
                 }
     .promo__container{
         max-width: 500px;
-        margin:155px auto 195px;
+        margin:138px auto 195px;
         text-align: center;
     }
         .promo__container__main{
@@ -107,7 +109,7 @@ body{
             line-height: 1.2;
         }
         .promo__container__main_margin{
-            margin-bottom: 41px;
+            margin-bottom: 27px;
         }
         .promo__container__sub-main{
             font-size: 24px;
@@ -116,7 +118,7 @@ body{
             line-height: 1.2;
         }
         .promo__container__sub-main_margin{
-            margin-bottom: 36px;
+            margin-bottom: 34px;
         }     
         .find-partner__button{
             display: flex;
@@ -137,13 +139,16 @@ body{
             margin: 0px auto;
         }    
           
-.how-it-works__title_margin{
-    margin: 100px auto 40px;
+.how-it-works_margin{
+    margin-top: 92px;
 } 
     .how-it-works__steps{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .how-it-works__steps_margin{
+        margin-top: 38px;
     }
         .steps__item{
             flex: 0 1 32%;
@@ -174,6 +179,7 @@ body{
                 height: 100%;
             }
                 .steps__item__button{
+                    letter-spacing: 1.6px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -192,18 +198,18 @@ body{
                     font-family: "Montserrat_B";
                     color: #ffffff;
                     line-height: 1.2;
-                    margin: 20px 0px 0px 0px; 
+                    margin: 13px 0px 0px 0px; 
                 }
                 .steps__item__text{
                     font-size: 14px;
                     font-family: "Roboto";
                     color: #cccccc;
                     line-height: 1.2;
-                    margin: 20px 0px 0px 0px;    
+                    margin: 11px 0px 0px 0px;    
                 }
 
-.find-a-partner__title_margin{
-    margin-top: 101px;
+.find-a-partner-section_margin{
+    margin-top: 92px;
 }
 .find-a-partner-section__partner-list{
     display: flex;
@@ -211,11 +217,11 @@ body{
     align-items: flex-start;
 }     
     .find-a-partner-section__partner-list_margin{   
-    margin-top: 40px;
+    margin-top: 33px;
     }    
     
     .partner-list__item{
-        flex: 0 1 200px;
+        flex: 0 1 218px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -270,11 +276,11 @@ body{
             text-align: center;
         }
         .partner__item__person-info_margin{
-            margin-top: 18px;
+            margin-top: 15px;
         }
 
     .find-a-partner-section__find-partner_margin{
-        margin: 40px auto 0px;
+        margin: 35px auto 0px;
     }
         .find-a-partner-section__find-partner__button_white{
             margin: 0px auto;
@@ -284,4 +290,176 @@ body{
             width: 196px;
             height: 44px;
           }
-          
+.discover-activity_margin{
+    margin-top: 93px;
+} 
+    .discover-activity__container_margin{
+        margin-top: 35px;
+    } 
+        .discover-activity__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+            .discover-activity__list__item{
+                background: #000;
+                height: 310px;
+                overflow: hidden;
+                border-radius: 4px;
+            }
+            .discover-activity__list__item_margin{
+                margin-bottom: 20px;
+            }
+            .discover-activity__list__item_single{
+                flex: 0 0 300px;
+            }    
+            .discover-activity__list__item_double{
+                flex: 0 0 620px;
+            }
+                .discover-activity__list__item__bg{
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                .discover-activity__list__item__bg_item1{
+                    background-image: url(../assets/img/activity__list/item1_bg.jpg);
+                }
+                .discover-activity__list__item__bg_item2{
+                    background-image: url(../assets/img/activity__list/item2_bg.jpg);
+                }
+                .discover-activity__list__item__bg_item3{
+                    background-image: url(../assets/img/activity__list/item3_bg.jpg);
+                }
+                .discover-activity__list__item__bg_item4{
+                    background-image: url(../assets/img/activity__list/item4_bg.jpg);
+                }
+                .discover-activity__list__item__bg_item5{
+                    background-image: url(../assets/img/activity__list/item5_bg.jpg);
+                }
+                .discover-activity__list__item__bg_item6{
+                    background-image: url(../assets/img/activity__list/item6_bg.jpg);
+                }
+                .discover-activity__list__item__bg_item7{
+                    background-image: url(../assets/img/activity__list/item7_bg.jpg);
+                }
+                .discover-activity__list__item__title_white{
+                    display: inline-block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #ffffff; 
+                }
+    .discover-activity__contact-form{
+        width: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    } 
+    .discover-activity__contact-form_margin{
+        margin: 74px auto 0px;
+    }  
+        .contact-form__text{
+                font-size: 18px;
+                font-family: "Roboto";
+                color: rgb(51, 51, 51);
+                line-height: 1.2;
+              }
+                
+        .contact-form__text_margin{
+            margin-top: 35px;
+        }
+
+        .contact-form__form{
+            display: flex;
+            width: 410px;
+            justify-content: space-between; 
+        }
+        .contact-form__form_margin{
+            margin: 37px auto 0px;
+        }   
+            .contact-form__form__input{
+                border: 1px solid rgb(204, 204, 204);
+                border-radius: 4px;
+                box-shadow: 0px 1px 0px 0px rgba(238, 238, 238, 0.004);
+                width: 238px;
+                height: 38px;
+                padding: 15px 0px 15px 17px; 
+            }
+            .contact-form__form__input::placeholder{
+                    font-size: 14px;
+                    font-family: "Roboto";
+                    color: rgb(153, 153, 153);
+                    line-height: 1.2;
+                    text-align: left;
+                }
+                  
+            .contact-form__form__find-partner__button_resize{
+                width: 160px;
+                height: 40px;
+                outline: none;
+                border: none;
+            }
+.footer-section{
+    width: 1440px;
+    border-top: 4px solid #ff4e50;
+    align-self: center;
+    }  
+.footer-section_margin{
+    margin-top: 99px; 
+} 
+    .footer-section__container{
+        width: 940px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .footer-section__container_margin{
+        margin: 38px auto 40px;
+    }
+    .footer-section__container__left{
+        display: flex;
+    }
+        .footer-section__name_red{
+            font-size: 16px;
+            color: rgb(255, 78, 80);    
+        }
+        .footer-section__container__company_margin{
+            margin-left: 116px;
+        }  
+            .company__title_resize{
+                font-size: 14px;
+            }  
+                .company__contacts__contact__text{
+                    font-size: 14px;
+                    font-family: "Roboto";
+                    color: rgb(102, 102, 102);
+                    line-height: 1.714;
+                    text-decoration: none;
+                } 
+                .company__contacts_margin{
+                    margin-top: 9px;
+                }     
+        .footer-section__container__partners_margin{
+            margin-left: 168px;
+        }    
+            .partners__title_resize{
+                font-size: 14px;
+            }
+        .footer-section__container__logo-container{
+            justify-self: flex-end;
+        }
+            .logo-container__text{
+                text-align: right;
+                font-size: 10px;
+                font-family: "Montserrat_B";
+                color: rgb(204, 204, 204);
+                text-transform: uppercase;
+                line-height: 1.2;     
+            }  
+            .logo-container__img_margin{
+                margin-top: 11px;
+            }       
