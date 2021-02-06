@@ -82,18 +82,14 @@ body{
                 font-size: 14px;
             }
                 .user-form__item{
-                    display: block;
-                    cursor: pointer;
-                }
-                .user-form__item_log-in{
-                    margin-right: 20px;
-                }
-                .user-form__item_sign-up{
                     display:flex;
                     justify-content: center;
                     align-items:center;
+                    cursor: pointer;
                     width: 94px;
                     height: 40px;
+                }
+                .user-form__item_sign-up{
                     border-radius: 18px;
                     border: 2px solid #ffffff;
                     background-color: transparent;
@@ -157,7 +153,8 @@ body{
             height: 400px;
             background-repeat: no-repeat;
             overflow: hidden;
-            background-size: contain;
+            background-size: cover;
+            background-position: 50% 0%;
         }
         .steps__item_step1{
             background-image: url('../assets/img/step1_bg.jpg');
@@ -323,7 +320,7 @@ body{
                     display: flex;
                     height: 100%;
                     background-repeat: no-repeat;
-                    background-size: contain;
+                    background-size: cover;
                 }
                 .discover-activity__list__item__bg_item1{
                     background-image: url(../assets/img/activity__list/item1_bg.jpg);
