@@ -1,68 +1,33 @@
-/*------------------------- FONT_FACE ------------------------*/
-
-@font-face {
-	font-family: 'Montserrat_R';
-	src: url('../assets/fonts/Montserrat Regular.eot');
-	src: local('☺'), url('../assets/fonts/Montserrat Regular.woff') format('woff'), url('../assets/fonts/Montserrat Regular.ttf') format('truetype'), url('../assets/fonts/Montserrat Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat_B';
-	src: url('../assets/fonts/MotserratBold.eot');
-	src: local('☺'), url('../assets/fonts/MotserratBold.woff') format('woff'), url('../assets/fonts/MotserratBold.ttf') format('truetype'), url('../assets/fonts/MotserratBold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Roboto';
-	src: url('../assets/fonts/Roboto.eot');
-	src: local('☺'), url('../assets/fonts/Roboto.woff') format('woff'), url('../assets/fonts/Roboto.ttf') format('truetype'), url('../assets/fonts/Roboto.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/*-------------------------  GLOBAL STYLES --------------------------*/
-body{
-    overflow-x: hidden;
-} 
 .wrapper{
-    align-items: flex-start;
-    max-width: 940px;
-    display: flex;
-    flex-direction: column;
     margin: 0px auto;
-}
+    padding: 0px 10px;
+    max-width: 320px;
+    overflow-x: hidden;
+}   
 
-.title{
-    font-size: 22px;
-    font-family: "Montserrat_B";
-    color: rgb(51, 51, 51);
-    line-height: 1.2;
-    text-align: center;   
-}      
 /*----------------------------- PROMO SECTION -----------------------------*/
-.promo{
-    align-self: center;
-    width: 1440px;
-    height: 697px;
-    font-family: 'Montserrat_B';
-    background-color: #1a1915;
-    background-image: url('../assets/img/promo-bg.png');
-    background-position: 50% 0%;
+
+.promo_mobile{
+    width: 320px;
+    height: 540px;
+    background-image: url('../assets/img/promo__container_bg_mobile.jpg');
     background-repeat: no-repeat;
+    background-position: 50% 0%;
 }
     .promo__header{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         justify-self: center;
         margin: 0px auto;
-        max-width: 940px;
+        max-width: 320px;
     }
+        .promo__header__name_mobile{
+            order: 2;
+        }
         .promo__header__name_margin{
-            margin: 45px 0px 0px 0px;
+            margin: 120px auto 0px;
         }
             .name{
                 font-size: 20px;
@@ -72,7 +37,7 @@ body{
                 font-family: 'Montserrat_B';
             }
         .promo__header__user-form_margin{
-            margin-top: 33px;
+            margin-top: 25px ;
         }
             .user-form{
                 display: flex;
@@ -86,7 +51,7 @@ body{
                     justify-content: center;
                     align-items:center;
                     cursor: pointer;
-                    width: 94px;
+                    width: 89px;
                     height: 40px;
                 }
                 .user-form__item_sign-up{
@@ -95,27 +60,22 @@ body{
                     background-color: transparent;
                 }
     .promo__container{
-        max-width: 500px;
-        margin:138px auto 195px;
+        max-width: 320px;
+        margin:40px auto 0px;
         text-align: center;
     }
         .promo__container__main{
-            font-size: 52px;
-            color: #ffffff;
-            text-transform: uppercase;
-            line-height: 1.2;
+            font-size: 30px;
         }
         .promo__container__main_margin{
-            margin-bottom: 27px;
+            margin-bottom: 0px;
         }
         .promo__container__sub-main{
-            font-size: 24px;
-            font-family: "Roboto";
-            color: #ffffff;
-            line-height: 1.2;
+            font-size: 18px;
+            width: 70%;
         }
         .promo__container__sub-main_margin{
-            margin-bottom: 34px;
+            margin:20px auto 0px;
         }     
         .find-partner__button{
             display: flex;
@@ -123,7 +83,7 @@ body{
             justify-content: center;
             align-items: center;
             background-color: rgb(255, 78, 80);
-            width: 225px;
+            width: 90%;
             height: 40px;
             font-size: 14px;
             color: #ffffff;
@@ -133,48 +93,32 @@ body{
             border-radius: 30px;
             }
         .promo__container__find-partner__button_margin{
-            margin: 0px auto;
+            margin: 20px auto 0px;
         }    
 /*----------------------------------- HOW IT WORKS SECTION ----------------------------*/          
 .how-it-works_margin{
-    margin-top: 92px;
+    margin-top: 40px;
 } 
     .how-it-works__steps{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: nowrap;
     }
     .how-it-works__steps_margin{
         margin-top: 38px;
     }
         .steps__item{
-            flex: 0 1 32%;
-            border-radius: 4px;
-            height: 400px;
-            background-repeat: no-repeat;
-            overflow: hidden;
-            background-size: cover;
-            background-position: 50% 0%;
+            flex: 0 0 300px;
+            height: 243px;
+            background-size: 100% 100%;
         }
-        .steps__item_step1{
-            background-image: url('../assets/img/steps/step1_bg.jpg');
-        }        
-        .steps__item_step2{
-            background-image: url('../assets/img/steps/step2_bg.jpg');
-        }        
-        .steps__item_step3{
-            background-image: url('../assets/img/steps/step3_bg.jpg');
+        .steps__item_margin-mobile{
+            margin-top: 10px;
         }
             .steps__item__container{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                background-color: transparent;
-                background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
-                background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
-                background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
-                padding: 21px;
-                height: 100%;
+                padding: 19px;
             }
                 .steps__item__button{
                     letter-spacing: 1.6px;
@@ -207,10 +151,11 @@ body{
                 }
 /*-------------------------------- FIND A PARTNER SECTION ------------------------------*/                
 .find-a-partner-section_margin{
-    margin-top: 92px;
+    margin-top: 40px;
 }
 .find-a-partner-section__partner-list{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }     
@@ -219,57 +164,18 @@ body{
     }    
     
     .partner-list__item{
-        flex: 0 1 218px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        flex: 0 1 206px;
+        align-items: center;
     }
-
-        .person{
-            display: flex;
-            justify-content: center;
-        }
-
-            .person__photo{
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-                overflow: hidden;
-            }
-            .person__icon{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 4px solid #ffffff;
-                    border-radius: 50%;
-                    position: absolute;
-                    width: 37px;
-                    height: 37px;
-                    margin: 86px 0px 0px 83px;
-            }
-            .person__icon-red{
-                background-color: #ff4e50;
-            }
-            .person__icon-green{
-                background-color: #1cd7ad;
-            }
-            .person__icon-yellow{
-                background-color: #ffa507;
-            }
-            .person__icon-blue{
-                background-color: #4e73db;
-            }
+    .partner-list__item_mobileMargin{
+        margin-top: 30px;
+    }
     .partner__item__title_person-name{
         margin-top: 20px;
         font-size: 14px;
     }
-    
     .partner__item__person-info{
-            font-size: 14px;
-            font-family: "Roboto";
-            color: rgb(102, 102, 102);
-            line-height: 1.2;
-            text-align: center;
+            width: 70%;
         }
         .partner__item__person-info_margin{
             margin-top: 15px;
@@ -279,19 +185,19 @@ body{
         margin: 35px auto 0px;
     }
         .find-a-partner-section__find-partner__button_white{
-            margin: 0px auto;
+            margin: 0x auto;
             border:2px solid #ff4e50 ;
             background-color: #ffffff;
             color: #ff4e50;
-            width: 196px;
+            width: 95%;
             height: 44px;
           }
 /*------------------------------------- DISCOVER ACTIVITY SECTION -----------------------------*/          
 .discover-activity_margin{
-    margin-top: 93px;
+    margin: 93px auto 0px;
 } 
     .discover-activity__container_margin{
-        margin-top: 35px;
+        margin: 35px auto 0px;
     } 
         .discover-activity__list{
             display: flex;
@@ -301,7 +207,7 @@ body{
         }
             .discover-activity__list__item{
                 background: #000;
-                height: 310px;
+                height: 120px;
                 overflow: hidden;
                 border-radius: 4px;
             }
@@ -312,27 +218,19 @@ body{
                 flex: 0 0 300px;
             }    
             .discover-activity__list__item_double{
-                flex: 0 0 620px;
+                flex: 0 0 300px;
             }
-                .discover-activity__list__item__bg{
-                    align-items: center;
-                    justify-content: center;
-                    display: flex;
-                    height: 100%;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
                 .discover-activity__list__item__bg_item1{
-                    background-image: url(../assets/img/activity__list/item1_bg.jpg);
+                    background-image: url(../assets/img/activity_mobile/item1_bg_mobile.jpg);
                 }
                 .discover-activity__list__item__bg_item2{
-                    background-image: url(../assets/img/activity__list/item2_bg.jpg);
+                    background-image: url(../assets/img/activity_mobile/item2_bg_mobile.jpg);
                 }
                 .discover-activity__list__item__bg_item3{
-                    background-image: url(../assets/img/activity__list/item3_bg.jpg);
+                    background-image: url(../assets/img/activity_mobile/item3_bg_mobile.jpg);
                 }
                 .discover-activity__list__item__bg_item4{
-                    background-image: url(../assets/img/activity__list/item4_bg.jpg);
+                    background-image: url(../assets/img/activity_mobile/item4_bg_mobile.jpg);
                 }
                 .discover-activity__list__item__bg_item5{
                     background-image: url(../assets/img/activity__list/item5_bg.jpg);
@@ -341,7 +239,7 @@ body{
                     background-image: url(../assets/img/activity__list/item6_bg.jpg);
                 }
                 .discover-activity__list__item__bg_item7{
-                    background-image: url(../assets/img/activity__list/item7_bg.jpg);
+                    background-image: url(../assets/img/activity_mobile/item7_bg_mobile.jpg);
                 }
                 .discover-activity__list__item__title_white{
                     display: inline-block;
@@ -350,15 +248,15 @@ body{
                     color: #ffffff; 
                 }
     .discover-activity__contact-form{
-        width: 460px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
     } 
     .discover-activity__contact-form_margin{
-        margin: 74px auto 0px;
-    }  
+        margin: 40px auto 0px;
+    }
         .contact-form__text{
                 font-size: 18px;
                 font-family: "Roboto";
@@ -372,7 +270,8 @@ body{
 
         .contact-form__form{
             display: flex;
-            width: 410px;
+            flex-direction: column;
+            width: 300px;
             justify-content: space-between; 
         }
         .contact-form__form_margin{
@@ -382,7 +281,7 @@ body{
                 border: 1px solid rgb(204, 204, 204);
                 border-radius: 4px;
                 box-shadow: 0px 1px 0px 0px rgba(238, 238, 238, 0.004);
-                width: 238px;
+                width: 100%;
                 height: 38px;
                 padding: 15px 0px 15px 17px; 
             }
@@ -395,7 +294,8 @@ body{
                 }
                   
             .contact-form__form__find-partner__button_resize{
-                width: 160px;
+                margin-top: 15px;
+                width: 100%;
                 height: 40px;
                 outline: none;
                 border: none;
@@ -407,29 +307,40 @@ body{
     align-self: center;
     }  
 .footer-section_margin{
-    margin-top: 99px; 
+    margin-top: 40px; 
 } 
     .footer-section__container{
-        width: 940px;
+        width: 200px;
+        padding: 0px 10px;
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
     }
     .footer-section__container_margin{
-        margin: 38px auto 40px;
+        margin: 20px auto 40px;
     }
     .footer-section__container__left{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
         .footer-section__name_red{
             font-size: 16px;
             color: rgb(255, 78, 80);    
         }
         .footer-section__container__company_margin{
-            margin-left: 116px;
+            margin-left: 0px;
+            margin-top: 20px;
         }  
             .company__title_resize{
                 font-size: 14px;
+            }
+            .company__contacts__contact{
+                display: inline-block;
+                margin: 0px 1px;
             }  
                 .company__contacts__contact__text{
                     font-size: 14px;
@@ -442,27 +353,19 @@ body{
                     margin-top: 9px;
                 }     
         .footer-section__container__partners_margin{
-            margin-left: 168px;
+            margin-left: 0px;
+            margin-top: 20px;
         }    
             .partners__title_resize{
                 font-size: 14px;
             }
         .footer-section__container__logo-container{
-            justify-self: flex-end;
+            margin: 20px auto 0px;
         }
             .logo-container__text{
-                text-align: right;
-                font-size: 10px;
-                font-family: "Montserrat_B";
-                color: rgb(204, 204, 204);
-                text-transform: uppercase;
-                line-height: 1.2;     
+                text-align: center;
+                font-size: 10px;   
             }  
             .logo-container__img_margin{
                 margin-top: 11px;
             }
-
-
-
-
- 
