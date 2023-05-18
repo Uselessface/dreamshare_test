@@ -1,9 +1,16 @@
-@media only screen and (max-width: 768px) and (min-width: 330px){
+@media only screen and (max-width: 900px) and (min-width: 568px){
+    *{
+        box-sizing: border-box;
+    }
     .wrapper{
-        width: 748px;
+        max-width: 100%;
+        margin-inline: auto;
     }
      
     /*----------------------------- PROMO SECTION -----------------------------*/
+    .promo{
+        width: 100%;
+    }
     .promo__header{
         max-width: 748px;
     } 
@@ -34,23 +41,22 @@
         margin: 92px auto 0px;
     }
     .find-a-partner-section__partner-list{
-        max-width: 492px ;
+        max-width: 90% ;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
+        gap: 1rem;
     }     
         .find-a-partner-section__partner-list_margin{   
-        margin-top: 33px;
-        }    
-        .partner-list__item_tabletMargin{
-            margin-top: 61px;;
+            margin-top: 33px;
+            margin-inline: auto;
         }
         .partner-list__item{
-            flex: 0 1 218px;
+            flex: 1;
             display: flex;
             justify-content: center;
             flex-direction: column;
+            align-self: flex-start;
         }
     /*------------------------------------- DISCOVER ACTIVITY SECTION -----------------------------*/          
         .discover-activity_margin{
@@ -58,25 +64,29 @@
         } 
         .discover-activity__container_margin{
             margin-top: 35px;
+            padding: .2em;
         } 
             .discover-activity__list{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: space-between;
+                margin-inline: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
             }
                 .discover-activity__list__item_single{
-                    flex: 0 0 236px;
+                    grid-column:span 1 ;
                 }    
                 .discover-activity__list__item_double{
-                    flex: 0 0 492px;
+                    grid-column: span 2;
                 }    
     /*--------------------------------------- FOOTER SECTION -----------------------------*/            
+        .footer-section{
+            width: 100%;
+        }
         .footer-section_margin{
             margin: 99px 0px 0px 0px; 
         } 
             .footer-section__container{
-                width: 748px;
+                max-width: 748px;
             }
             .footer-section__container_margin{
                 padding: 0px 31px;
